@@ -9,10 +9,10 @@ s3 = boto3.client('s3')
 BUCKET_NAME = 'imagenes-taller-cristhian'
 # Configuración RDS
 conn = psycopg2.connect(
-    host='',
-    database='',
-    user='',
-    password=''
+    host='imagenesdb2.czyqgkyssdoq.us-east-1.rds.amazonaws.com ',
+    database='imagenes',
+    user='admin',
+    password='!Cristian2396980'
 )
 @app.route('/upload', methods=['POST'])
 def upload_file():
